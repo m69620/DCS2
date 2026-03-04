@@ -1,0 +1,155 @@
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+/* Container des Onglets */
+.tab {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tab button {
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 600;
+    color: #64748b;
+    border-bottom: 3px solid transparent;
+}
+
+.tab button:hover {
+    background-color: #f8fafc;
+    color: #3498db;
+}
+
+.tab button.active {
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+    background-color: #f0f9ff;
+}
+
+/* Contenu des Onglets */
+.tabcontent {
+    display: none;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Titres */
+h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Bouton de Switch (Graphique/Tableau) */
+.switch-container {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.btn-switch {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-switch:hover {
+    background-color: #334155;
+    transform: translateY(-1px);
+}
+
+.btn-switch:active {
+    transform: translateY(0);
+}
+
+/* Container des Graphiques */
+.chart-container {
+    width: 100%;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+/* Style tableau */
+.data-table {
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.data-table thead {
+    background-color: #34495e; 
+    color: #ffffff;
+}
+
+.data-table th {
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f1f7fd;
+    transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table td:last-child, .data-table th:last-child {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
